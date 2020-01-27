@@ -20,7 +20,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       title: 'Personal Expenses',
       theme: ThemeData(
           primarySwatch: Colors.purple,
@@ -161,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text('Show Chart'),
+                Text('Show Chart', style: Theme.of(context).textTheme.title,),
                 Switch(
                   value: _showChart,
                   onChanged: (val) {
